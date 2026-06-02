@@ -1,0 +1,66 @@
+{
+  "source_h5": "D:\\合成大论文\\创新研究\\model\\KITS-main\\datasets\\intel_lab\\intel_lab.h5",
+  "shape": [
+    1627,
+    42
+  ],
+  "offsets": [
+    {
+      "offset": 0.0,
+      "file": "physical_diffusion_offset_0.npz",
+      "calibration_scale": 0.0,
+      "late_source_mean_delta": 0.0,
+      "late_source_error": 0.0,
+      "clipped_fraction": 0.0
+    },
+    {
+      "offset": 5.0,
+      "file": "physical_diffusion_offset_5.npz",
+      "calibration_scale": 0.03705071429589057,
+      "late_source_mean_delta": 5.0,
+      "late_source_error": 0.0,
+      "clipped_fraction": 0.0
+    },
+    {
+      "offset": 10.0,
+      "file": "physical_diffusion_offset_10.npz",
+      "calibration_scale": 0.07410142859178113,
+      "late_source_mean_delta": 10.0,
+      "late_source_error": 0.0,
+      "clipped_fraction": 0.0
+    },
+    {
+      "offset": 15.0,
+      "file": "physical_diffusion_offset_15.npz",
+      "calibration_scale": 0.11115214288767171,
+      "late_source_mean_delta": 15.0,
+      "late_source_error": 0.0,
+      "clipped_fraction": 0.0
+    },
+    {
+      "offset": 20.0,
+      "file": "physical_diffusion_offset_20.npz",
+      "calibration_scale": 0.14820285718356227,
+      "late_source_mean_delta": 20.0,
+      "late_source_error": 0.0,
+      "clipped_fraction": 0.0
+    }
+  ],
+  "params": {
+    "eta": 0.05,
+    "beta": 0.006,
+    "sigma_d": 8.0,
+    "lambda_wall": 1.7,
+    "room_bonus": 1.2,
+    "k_nearest": 10,
+    "start_fraction": 0.2,
+    "source_tau_steps": 96.0,
+    "source_rooms": [
+      1,
+      2
+    ],
+    "equation": "delta[t+1] = delta[t] + eta * (P @ delta[t] - delta[t]) - beta * delta[t] + source[t]"
+  },
+  "calibration_rule": "Scale unit-source diffusion so late-period Room 1/2 mean delta matches target offset.",
+  "wall_count_source": "datasets/intel_lab/walls.npy"
+}

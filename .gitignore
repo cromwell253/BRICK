@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+logs/
+*.ckpt
+*.pth
+*.pt
+model/version_*/
+events.out.tfevents.*
+.DS_Store

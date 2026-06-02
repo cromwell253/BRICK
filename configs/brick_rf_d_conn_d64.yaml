@@ -1,0 +1,38 @@
+## BRICK-RF-D-CONN: connection-only structural prior + detached residual forecast.
+## This is motivated by the info_conn_only ablation, which outperformed
+## wall+connection in the representative offset=15 setting.
+add_same_room_edges: false
+adj_threshold: 0.1
+aggregate_by:
+- mean
+batch_size: 32
+conn_lambda: 0.5
+d_hidden: 64
+dataset_name: intel_lab
+detrend: false
+epochs: 300
+forecast_horizon: 12
+forecast_loss_weight: 0.04
+forecast_use_orig_adj: true
+forecast_residual: true
+forecast_residual_init: 0.1
+forecast_residual_detach_context: true
+model_name: kits
+patience: 50
+pred_loss_weight: 1
+room_boost_factor: 0.3
+samples_per_epoch: 5120
+scale: true
+scaled_target: true
+scaling_axis: channels
+use_multi_relation: true
+use_multiscale_temporal: false
+use_physics_conv: false
+use_physics_loss: false
+use_temporal_gru: false
+use_uncertainty: false
+use_wall_attention: false
+use_wall_transfer: false
+variable: temperature
+wall_lambda: 0.0
+window: 24
