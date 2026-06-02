@@ -177,6 +177,47 @@ python train.py \
   --checkpoint-save-top-k 1
 ```
 
+## Reference Results and Commands
+
+The table below gives a compact reproducibility target for the room-coverage setting with 50% hidden sensors, physical-diffusion offset +20 C, and seeds 1/2/3. Values are mean +/- standard deviation over the three seeds.
+
+| Setting | Model | Config | Recon MAE | Recon RMSE | Forecast MAE | Forecast RMSE |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| miss-rate 0.5, offset 20 | BL | `configs/brick_rf_d_info_none_d64.yaml` | 2.7945 +/- 0.4620 | 5.0547 +/- 1.0537 | 3.6637 +/- 0.7148 | 6.3286 +/- 1.4090 |
+| miss-rate 0.5, offset 20 | BRICK | `configs/brick_residual_forecast_detached_d64.yaml` | 2.4109 +/- 0.6899 | 4.3255 +/- 1.1272 | 2.2351 +/- 0.2263 | 3.7313 +/- 0.4193 |
+
+Run the BRICK row:
+
+```bash
+for seed in 1 2 3; do
+  python train.py \
+    --config configs/brick_residual_forecast_detached_d64.yaml \
+    --dataset-name intel_lab \
+    --model-name kits \
+    --seed ${seed} \
+    --miss-rate 0.5 \
+    --semisynth-file data/physical_diffusion/physical_diffusion_offset_20.npz \
+    --split-file data/room_coverage_splits/split_roomcov_mr0.5_seed${seed}.npz \
+    --checkpoint-save-top-k 1
+done
+```
+
+Run the BL row:
+
+```bash
+for seed in 1 2 3; do
+  python train.py \
+    --config configs/brick_rf_d_info_none_d64.yaml \
+    --dataset-name intel_lab \
+    --model-name kits \
+    --seed ${seed} \
+    --miss-rate 0.5 \
+    --semisynth-file data/physical_diffusion/physical_diffusion_offset_20.npz \
+    --split-file data/room_coverage_splits/split_roomcov_mr0.5_seed${seed}.npz \
+    --checkpoint-save-top-k 1
+done
+```
+
 ## Regenerating Benchmark Data
 
 The checked-in data are sufficient for the reported experiments. To regenerate benchmark files, run:
