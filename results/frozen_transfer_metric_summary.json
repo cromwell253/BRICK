@@ -1,0 +1,39 @@
+{
+  "summary": [
+    {
+      "building": "Hospital_1",
+      "method": "BRICK",
+      "MAE_C": 1.5913785449216833,
+      "RMSE_C": 2.0449906381545,
+      "R2": 0.5603994248523717,
+      "MAE_SD_C": 0.35719965528588615
+    },
+    {
+      "building": "Hospital_1",
+      "method": "Component-conditioned kriging",
+      "MAE_C": 1.3690677369736513,
+      "RMSE_C": 1.809789679094517,
+      "R2": 0.6454941973798801,
+      "MAE_SD_C": 0.32630621526827625
+    },
+    {
+      "building": "Residence_4",
+      "method": "BRICK",
+      "MAE_C": 2.1728983936768227,
+      "RMSE_C": 3.272056005900555,
+      "R2": 0.840086471672222,
+      "MAE_SD_C": 0.6673412103403097
+    },
+    {
+      "building": "Residence_4",
+      "method": "Component-conditioned kriging",
+      "MAE_C": 2.557097701674081,
+      "RMSE_C": 3.331373253329529,
+      "R2": 0.8361419987355007,
+      "MAE_SD_C": 0.711994787307618
+    }
+  ],
+  "R2_added_from_sealed_predictions": true,
+  "aggregation": "Equal folds and seeds within each building",
+  "original_MAE_conditions_reproduced": 36
+}
