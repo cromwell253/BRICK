@@ -43,7 +43,7 @@ Dataset versions are recorded in `data/datasets.json`.
 
 ## Connection information
 
-The building pair tables use a geometry-dependent connection prior based on distance and intervening wall count. BRICK normalizes the probability matrix P by its maximum and incorporates it into graph edge weights through A = A_distance × (0.5 + 0.5P). Both graph thresholds are 0.1, with zero diagonal entries. The supplied [54-sensor analysis](docs/connection_analysis.md) illustrates the association between connection probability, distance and wall separation.
+The building pair tables use a geometry-dependent connection prior based on distance and intervening wall count. Connection probability decreases with greater distance and more intervening walls. BRICK normalizes the probability matrix P by its maximum and incorporates it into graph edge weights through A = A_distance × (0.5 + 0.5P). Both graph thresholds are 0.1, with zero diagonal entries. The supplied [54-sensor analysis](docs/connection_analysis.md) illustrates the association between connection probability, distance and wall separation.
 
 ## Running the code
 

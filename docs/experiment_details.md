@@ -137,3 +137,18 @@ R² was added from the sealed predictions during manuscript revision. The origin
 | Hospital_1 | Component-conditioned kriging | 1.369068 | 1.809790 | 0.645494 |
 | Residence_4 | BRICK | 2.172898 | 3.272056 | 0.840086 |
 | Residence_4 | Component-conditioned kriging | 2.557098 | 3.331373 | 0.836142 |
+
+## Frozen KITS comparison
+
+The manuscript revision adds the existing BL-KITS baseline as a frozen comparator on Hospital_1 and Residence_4. Each of three KITS runs averages nine source models from Hospital_2, Office_1 and Residence_2 and their three spatial folds. Each model uses its source normalization and frozen weights. KITS uses seeds 505, 606 and 707 from the six-dataset comparison. The reused BRICK results use seeds 1103, 1201 and 1301. Results average folds and training runs within each building; no paired-seed significance test is reported.
+
+Both methods use the same target observations, query locations and 24 evaluation times. Query histories remain masked. Target training, parameter updates and hyperparameter selection are zero. The existing KITS baseline uses the native three-GCN architecture with hidden width 64 and the recorded source training objective of reconstruction, virtual-node cycle consistency and 0.04-weight detached 12-step forecasting. Target inference evaluates the frozen reconstruction output. Source models were trained for 48 epochs and 384 updates. The KITS addition follows the manuscript author's request after the original BRICK transfer evaluation.
+
+| Building | Method | MAE | RMSE | R² |
+|---|---|---:|---:|---:|
+| Hospital_1 | BRICK | 1.591379 | 2.044991 | 0.560399 |
+| Hospital_1 | KITS | 2.857025 | 4.040309 | -0.675329 |
+| Residence_4 | BRICK | 2.172898 | 3.272056 | 0.840086 |
+| Residence_4 | KITS | 4.979366 | 9.296838 | -0.261404 |
+
+Exact target node/time selections and source checkpoint fingerprints are in `configs/frozen_transfer.json`. Per-condition metrics are in `results/frozen_kits_comparison.csv`. The eighteen KITS arrays were sealed before endpoint scoring. All eighteen metric records and source fingerprints passed independent verification.

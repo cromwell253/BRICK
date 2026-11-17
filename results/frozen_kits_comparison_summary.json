@@ -1,0 +1,82 @@
+{
+  "summary": [
+    {
+      "building": "Hospital_1",
+      "method": "BRICK",
+      "MAE_C": 1.5913785449216833,
+      "RMSE_C": 2.0449906381545,
+      "R2": 0.5603994248523717,
+      "MAE_SD_C": 0.35719965528588615
+    },
+    {
+      "building": "Hospital_1",
+      "method": "KITS",
+      "MAE_C": 2.8570248209399938,
+      "RMSE_C": 4.040308713295066,
+      "R2": -0.6753286457199752,
+      "MAE_SD_C": 0.1425190240597112
+    },
+    {
+      "building": "Residence_4",
+      "method": "BRICK",
+      "MAE_C": 2.1728983936768227,
+      "RMSE_C": 3.272056005900555,
+      "R2": 0.840086471672222,
+      "MAE_SD_C": 0.6673412103403097
+    },
+    {
+      "building": "Residence_4",
+      "method": "KITS",
+      "MAE_C": 4.979365754951501,
+      "RMSE_C": 9.296837623409944,
+      "R2": -0.2614037751980278,
+      "MAE_SD_C": 1.1846157585797923
+    }
+  ],
+  "source_buildings": [
+    "Hospital_2",
+    "Office_1",
+    "Residence_2"
+  ],
+  "source_folds": [
+    0,
+    1,
+    2
+  ],
+  "source_models_per_seed": 9,
+  "KITS_seeds": [
+    505,
+    606,
+    707
+  ],
+  "BRICK_seeds": [
+    1103,
+    1201,
+    1301
+  ],
+  "target_training_updates": 0,
+  "aggregation": "equal building/fold/seed means",
+  "scoring": "All prediction arrays sealed before endpoint scoring",
+  "reused_BRICK_predictions": true,
+  "KITS_prediction_hashes": [
+    "4677c0a22224190fbd33969fb13e929ba9e44ebe2f41854dc965bd33314bb49d",
+    "e89af840b000b361de772badd20078d1ffd52e696d180806584cc5738884ff95",
+    "bee71b5be519409bc0cbd08d2a3ac8bdb3d23e348cf5b8954731f95303fa65be",
+    "18d291ae8f914c29eecde5c0d2870009fae5e9d55acb871fb09c08787a211269",
+    "025815d6a2f45f77231a09acc64c6fee21b90a89d65871a89e1e3b9869a52fd8",
+    "fedd45fb7eb9c77d2c8f8cc2429c2f8bb627516683077edd46f014206f8559df",
+    "a1f079bdf49d4d2dbfb445bfdff1f3ce3637101554d75a66c015a964692c0a5c",
+    "ece906782321b6d7a06bc5bd958ad71e6c616f12391983883694f23746c500f6",
+    "f5a22451aa4e1c33f06f1e164968d9e905b850c870ffeae03a9b88977686758c",
+    "eeada8f6821e9c115db0c44b65a7b2a88efc8476b9d1a3392aee83c1e3af9fb4",
+    "01b2fc2bc3077cba486ec5a8713d7b6399d20d56c92f3a2895c1e759e1ceb94a",
+    "32183201df7e42f955fa0f010347d8766a402d38366c6ad6b328cba137998059",
+    "c4335eb905cd52608bd55c5ca3c72ca5fe4ad4631b4c8ca08b701fe91eae5057",
+    "fd3c6d2bb087e52ab8437e587f6ddedb0a6f81762ad1dcc7fc634b8ddec68436",
+    "5a64f14036723040f92c721d66d783032b3384e3ac05b1bb725ee0cd4f253e00",
+    "37cd9fd8fe31466d6425f64a1247045182ca849721f0a2a736deac2d545c5d8a",
+    "02bdd630e8e34ee348ddb3a64fdcf923e2968be132dec57970a13ffc077d6ca3",
+    "681f89b919a97d43d84d54c085cf2056bef50dbb40e853164e54e71a1085be53"
+  ],
+  "independent_audit_passed": true
+}
