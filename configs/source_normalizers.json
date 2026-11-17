@@ -1,0 +1,128 @@
+[
+  {
+    "scene": "Hospital_2",
+    "fold": 0,
+    "mean": 18.190292358398438,
+    "std": 4.24582052230835,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Hospital_2",
+    "fold": 1,
+    "mean": 15.343306541442871,
+    "std": 7.37175178527832,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Hospital_2",
+    "fold": 2,
+    "mean": 15.831645011901855,
+    "std": 6.6695451736450195,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Office_1",
+    "fold": 0,
+    "mean": 27.765268325805664,
+    "std": 1.4337154626846313,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Office_1",
+    "fold": 1,
+    "mean": 27.99074363708496,
+    "std": 1.1368597745895386,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Office_1",
+    "fold": 2,
+    "mean": 28.134546279907227,
+    "std": 1.1255464553833008,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Residence_2",
+    "fold": 0,
+    "mean": 19.35843849182129,
+    "std": 2.629863739013672,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Residence_2",
+    "fold": 1,
+    "mean": 19.299983978271484,
+    "std": 2.4660582542419434,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Residence_2",
+    "fold": 2,
+    "mean": 19.7606143951416,
+    "std": 2.479323387145996,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Office_2",
+    "fold": 0,
+    "mean": 19.857833862304688,
+    "std": 2.3087146282196045,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Office_2",
+    "fold": 1,
+    "mean": 20.096797943115234,
+    "std": 2.151776075363159,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Office_2",
+    "fold": 2,
+    "mean": 19.912981033325195,
+    "std": 2.3938910961151123,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Residence_1",
+    "fold": 0,
+    "mean": 31.049217224121094,
+    "std": 1.8495358228683472,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Residence_1",
+    "fold": 1,
+    "mean": 30.84185791015625,
+    "std": 2.030578851699829,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Residence_1",
+    "fold": 2,
+    "mean": 30.578174591064453,
+    "std": 1.81112539768219,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Residence_3",
+    "fold": 0,
+    "mean": 29.48833656311035,
+    "std": 3.1151602268218994,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Residence_3",
+    "fold": 1,
+    "mean": 29.256040573120117,
+    "std": 2.753244638442993,
+    "scope": "frames 0 through 707, training nodes only"
+  },
+  {
+    "scene": "Residence_3",
+    "fold": 2,
+    "mean": 30.630746841430664,
+    "std": 2.361619472503662,
+    "scope": "frames 0 through 707, training nodes only"
+  }
+]

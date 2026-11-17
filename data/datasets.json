@@ -1,0 +1,82 @@
+[
+  {
+    "scene": "Hospital_1",
+    "nodes": 46,
+    "frames": 1009,
+    "sampling_minutes": 10,
+    "version": "dense-pde-v7-wall-mounted-device-projected-plume",
+    "temperature_sha256": "77f429a84bc8d275906e3c06c461cd06640662e112dcf8912d3c0188bf41a00a",
+    "coordinate_mapping": "nearest source pair coordinate within 0.01 m; node order matches evaluated bundle",
+    "data_use": "publication export only; no target retraining or rescoring"
+  },
+  {
+    "scene": "Hospital_2",
+    "nodes": 60,
+    "frames": 1009,
+    "sampling_minutes": 10,
+    "version": "dense-pde-v7-wall-mounted-device-projected-plume",
+    "temperature_sha256": "049a64998e813d6b844e579df0791b1e7eeb061d7c7e7d5ecfef85502417a236",
+    "coordinate_mapping": "nearest source pair coordinate within 0.01 m; node order matches evaluated bundle",
+    "data_use": "publication export only; no target retraining or rescoring"
+  },
+  {
+    "scene": "Office_1",
+    "nodes": 27,
+    "frames": 1009,
+    "sampling_minutes": 10,
+    "version": "dense-pde-v10-office1-linewall-footprint-final",
+    "temperature_sha256": "760358dad9ab382579ee457fa35d277a50058037ef4864f535d90ff0d8bcb2ba",
+    "coordinate_mapping": "nearest source pair coordinate within 0.01 m; node order matches evaluated bundle",
+    "data_use": "publication export only; no target retraining or rescoring"
+  },
+  {
+    "scene": "Office_2",
+    "nodes": 41,
+    "frames": 1009,
+    "sampling_minutes": 10,
+    "version": "dense-pde-v7-wall-mounted-device-projected-plume",
+    "temperature_sha256": "5c31966685f70135d3231cfda973b8ca3eedd0c88bdeff4f8398b54acc42bf15",
+    "coordinate_mapping": "nearest source pair coordinate within 0.01 m; node order matches evaluated bundle",
+    "data_use": "publication export only; no target retraining or rescoring"
+  },
+  {
+    "scene": "Residence_1",
+    "nodes": 16,
+    "frames": 1009,
+    "sampling_minutes": 10,
+    "version": "dense-pde-v7-wall-mounted-device-projected-plume",
+    "temperature_sha256": "d7ae6c1c4f74cb0789ddfea2860390fedcc09640bb469c52a00b1e10f8217f13",
+    "coordinate_mapping": "nearest source pair coordinate within 0.01 m; node order matches evaluated bundle",
+    "data_use": "publication export only; no target retraining or rescoring"
+  },
+  {
+    "scene": "Residence_2",
+    "nodes": 28,
+    "frames": 1009,
+    "sampling_minutes": 10,
+    "version": "dense-pde-v7-wall-mounted-device-projected-plume",
+    "temperature_sha256": "62a147ae8745d5061f5efb47d803fd518b0d0578373a05b1817253dee7bcd503",
+    "coordinate_mapping": "nearest source pair coordinate within 0.01 m; node order matches evaluated bundle",
+    "data_use": "publication export only; no target retraining or rescoring"
+  },
+  {
+    "scene": "Residence_3",
+    "nodes": 39,
+    "frames": 1009,
+    "sampling_minutes": 10,
+    "version": "dense-pde-v12-residence3-stair-envelope-final",
+    "temperature_sha256": "fab31da9f383e36df3c0b4d91e1c09bb6bfee8e9aebb8fb9853bf579796d5317",
+    "coordinate_mapping": "nearest source pair coordinate within 0.01 m; node order matches evaluated bundle",
+    "data_use": "publication export only; no target retraining or rescoring"
+  },
+  {
+    "scene": "Residence_4",
+    "nodes": 45,
+    "frames": 1009,
+    "sampling_minutes": 10,
+    "version": "dense-pde-v11-open-polyline-wall-filter",
+    "temperature_sha256": "8e0e1ff43b399d3d0e9d646afe5df4585664a66608124382a0317febfa9504fc",
+    "coordinate_mapping": "nearest source pair coordinate within 0.01 m; node order matches evaluated bundle",
+    "data_use": "publication export only; no target retraining or rescoring"
+  }
+]

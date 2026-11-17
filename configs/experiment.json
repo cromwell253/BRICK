@@ -1,0 +1,31 @@
+{
+  "window": 24,
+  "epochs": 48,
+  "updates": 384,
+  "samples_per_epoch": 128,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "gradient_clip": 5.0,
+  "evaluation_interval": 2,
+  "comparison_seeds": [
+    505,
+    606,
+    707
+  ],
+  "ablation_seeds": [
+    1103,
+    1201,
+    1301
+  ],
+  "weights": {
+    "reconstruction": 1.0,
+    "cycle": 0.25,
+    "forecast": 0.04,
+    "history": 1.0,
+    "endpoint": 3.0
+  },
+  "forecast_horizon": 12,
+  "calibration_history_weight": 1.0,
+  "calibration_endpoint_weight": 3.0,
+  "model_selection": "minimum development MAE within fixed 48-epoch budget"
+}

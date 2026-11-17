@@ -1,0 +1,4 @@
+BRICK incorporates the KITS implementation distributed under the S-Lab License 1.0.
+The upstream license and attribution are retained. See LICENSE for redistribution and commercial-use conditions.
+KITS: Inductive Spatio-Temporal Kriging with Increment Training Strategy, AAAI 2025.
+https://doi.org/10.1609/aaai.v39i12.33412

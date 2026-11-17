@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "optimization_steps": 0,
+  "synthetic_inputs_only": true,
+  "target_temperature_values_read": 0,
+  "synthetic_full_objective_and_parameter_gradients_exact": true,
+  "records": [
+    {
+      "scene": "Hospital_2",
+      "state_keys": 31,
+      "initializer_exact": true,
+      "frozen_checkpoint_strict_load": true,
+      "synthetic_prediction_max_error": 0.0,
+      "query_nan_isolated": true
+    },
+    {
+      "scene": "Office_1",
+      "state_keys": 31,
+      "initializer_exact": true,
+      "frozen_checkpoint_strict_load": true,
+      "synthetic_prediction_max_error": 0.0,
+      "query_nan_isolated": true
+    },
+    {
+      "scene": "Residence_2",
+      "state_keys": 31,
+      "initializer_exact": true,
+      "frozen_checkpoint_strict_load": true,
+      "synthetic_prediction_max_error": 0.0,
+      "query_nan_isolated": true
+    },
+    {
+      "scene": "Office_2",
+      "state_keys": 31,
+      "initializer_exact": true,
+      "frozen_checkpoint_strict_load": true,
+      "synthetic_prediction_max_error": 0.0,
+      "query_nan_isolated": true
+    },
+    {
+      "scene": "Residence_1",
+      "state_keys": 31,
+      "initializer_exact": true,
+      "frozen_checkpoint_strict_load": true,
+      "synthetic_prediction_max_error": 0.0,
+      "query_nan_isolated": true
+    },
+    {
+      "scene": "Residence_3",
+      "state_keys": 31,
+      "initializer_exact": true,
+      "frozen_checkpoint_strict_load": true,
+      "synthetic_prediction_max_error": 0.0,
+      "query_nan_isolated": true
+    }
+  ]
+}
